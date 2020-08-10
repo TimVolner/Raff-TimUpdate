@@ -62,9 +62,7 @@ function App() {
 function create_page(page) {
     return (
     <div className="App">
-      <div className="header">
          <Header />
-      </div>
       <div class = "page">
         {page}
       </div>

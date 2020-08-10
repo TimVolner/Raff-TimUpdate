@@ -1,20 +1,8 @@
 .App {
   text-align: center;
-  background-color: white;
 }
 
-.home {
-align-items: center;
-min-height: 100vh;
-}
 
-.home .Header {
-text-align: center;
-margin-top: 5px;
-margin-bottom: -20px;
-margin-left: 45px;
-margin-right: 45px;
-}
 
 .home h3 {
   font-size: 55px;
@@ -33,24 +21,8 @@ margin-right: 45px;
   font-family: 'Sora', sans-serif;
 }
 
-.home h1 {
-  font-size: 45px;
-  font-family: 'Sora', sans-serif;
-  text-align: center;
-}
 
-.home button {
-  background: white;
-  font-size: 30px;
-  border-radius:30px 0 30px 0;
-  font-family: 'Sora', sans-serif;
-text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: -310px;
-  margin-right: 165px;
 
-}
 
 
  .about h2 {
@@ -59,75 +31,6 @@ text-align: center;
   color: bold;
 }
 
-.header {
-display: grid;
-background-color: black;
-text-align: center;
-}
-
-.header .col1 {
-display: inline-grid;
-color:red;
-text-align: center;
-
-background-color: black;
-margin-top: 5px;
-margin-bottom: -20px;
-margin-left: 5px;
-margin-right: 5px;
-border-radius: 5xp;
-border-color: black;
-
-}
-
-.col1  {
-grid.columns: 2px;
-color:black;
-
-}
-
-
-.col2 {
-grid.columns: 2px;
-}
-
-.header .menu {
-display: inline-block;
-width: 100%;
-text-align: center;
-}
-
-
-.header .menu h3 {
-display: inline-block;
-background-color: white;
-color: red;
-font-family: 'Sora', sans-serif;
-margin-top: 10px;
-margin-bottom: 10px;
-margin-left: 10px;
-margin-right: 15px;
-
-padding-top: 5px;
-padding-bottom: 5px;
-padding-left: 10px;
-padding-right: 10px;
-
-border-radius: 10xp;
-border-color: blue;
-border-style: solid;
-text-align: center;
-
-}
-
-.header .menu h3 {
-  color: red;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 15px;
-
-}
 
 
 
@@ -220,13 +123,18 @@ text-align: center;
 .about h3 {
 display: inline-block;
 background-color: white;
-border-radius: 10xp;
+border-radius: 10px;
 border-color: bold;
 border-style: solid;
+border-size: 2px;
 text-align: top;
-grid-column: 4;
-grid-column-end:spam 2;
-grid-row: 4;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 5px;
+margin-bottom: 0px;
+width: calc(100% - 9px);
+height: calc(100% - 4px);
+padding: 0px;
 
 }
 
@@ -234,45 +142,59 @@ grid-row: 4;
 display: inline-block;
 background-color: white;
 color: black;
-border-radius: 10xp;
+border-radius: 10px;
 border-color: bold;
 border-style: solid;
+border-size: 2px;
 text-align: top;
-grid-column: 4/6;
-grid-column-end:spam 2;
-grid-row: 3;
+margin-left: 0px;
+margin-right: 5px;
+margin-bottom: 10px;
+margin-top: 0px;
+width: calc(100% - 9px);
+height: calc(100% - 10px);
 }
 
 .about h1 {
-grid-column: 4;
-grid-column-end:spam 4;
-grid-row: 1;
 text-align: center;
+width: 100%;
+
+}
+
+.about .AU-img {
 
 }
 
 .about .AU {
-grid-column: 4;
-grid-column-end:spam 4;
-grid-row: 2;
-text-align: center;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .about .dreamcar {
-grid-column: 7;
-grid-column-end:spam 2;
-grid-row: 3;
-grid-row-end:spam 2;
-text-align: center;
+  height: 100%;
+  width: calc(100% - 5px);
+  margin-left: 5px;
+  margin-bottom: 0px;
+  padding: 0px;
 
 }
 
 .about .dreamcar-img {
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+  border-size: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0px;
 
+}
 
+.spacer {
+  min-height: 150px;
+  min-width: 100%;
 }
 
 .car h1 {
@@ -300,12 +222,7 @@ text-align: center;
 
 }
 
-.logo{
-  height: 200px;
-  width: 200px;
-  background: transparent;
 
-}
 
 .Car2{
   height: 200px;
@@ -347,4 +264,352 @@ text-align: center;
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.row1 {
+  grid-row: 1;
+}
+.row2 {
+  grid-row: 2;
+}
+.row3 {
+  grid-row: 3;
+}
+.row4 {
+  grid-row: 4;
+}
+.row5 {
+  grid-row: 5;
+}
+.row6 {
+  grid-row: 6;
+}
+.row7 {
+  grid-row: 7;
+}
+.row8 {
+  grid-row: 8;
+}
+.row9 {
+  grid-row: 9;
+}
+.row10 {
+  grid-row: 10;
+}
+.row11 {
+  grid-row: 11;
+}
+.row12 {
+  grid-row: 12;
+}
+
+.rspan1 {
+  grid-row-end: span 1;
+}
+.rspan2 {
+  grid-row-end: span 2;
+}
+.rspan3 {
+  grid-row-end: span 3;
+}
+.rspan4 {
+  grid-row-end: span 4;
+}
+.rspan5 {
+  grid-row-end: span 5;
+}
+.rspan6 {
+  grid-row-end: span 6;
+}
+.rspan7 {
+  grid-row-end: span 7;
+}
+.rspan8 {
+  grid-row-end: span 8;
+}
+.rspan9 {
+  grid-row-end: span 9;
+}
+.rspan10 {
+  grid-row-end: span 10;
+}
+.rspan11 {
+  grid-row-end: span 11;
+}
+.rspan12 {
+  grid-row-end: span 12;
+}
+
+
+.col1 {
+  grid-column: 1;
+}
+.col2 {
+  grid-column: 2;
+}
+.col3 {
+  grid-column: 3;
+}
+.col4 {
+  grid-column: 4;
+}
+.col5 {
+  grid-column: 5;
+}
+.col6 {
+  grid-column: 6;
+}
+.col7 {
+  grid-column: 7;
+}
+.col8 {
+  grid-column: 8;
+}
+.col9 {
+  grid-column: 9;
+}
+.col10 {
+  grid-column: 10;
+}
+.col11 {
+  grid-column: 11;
+}
+.col12 {
+  grid-column: 12;
+}
+.col13 {
+  grid-column: 13;
+}
+.col14 {
+  grid-column: 14;
+}
+
+.cspan1 {
+  grid-column-end: span 1;
+}
+.cspan2 {
+  grid-column-end: span 2;
+}
+.cspan3 {
+  grid-column-end: span 3;
+}
+.cspan4 {
+  grid-column-end: span 4;
+}
+.cspan5 {
+  grid-column-end: span 5;
+}
+.cspan6 {
+  grid-column-end: span 6;
+}
+.cspan7 {
+  grid-column-end: span 7;
+}
+.cspan8 {
+  grid-column-end: span 8;
+}
+.cspan9 {
+  grid-column-end: span 9;
+}
+.cspan10 {
+  grid-column-end: span 10;
+}
+.cspan11 {
+  grid-column-end: span 11;
+}
+.cspan12 {
+  grid-column-end: span 12;
+}
+.cspan13 {
+  grid-column-end: span 13;
+}
+.cspan14 {
+  grid-column-end: span 14;
+}
+
+
+
+.logo {
+  height: 100px;
+  padding: 10px;
+}
+.logo-container {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.header {
+  display: grid;
+  background: rgb(14,14,14);
+  background: linear-gradient(90deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 64%, rgba(70,70,70,1) 100%);
+  text-align: center;
+  grid-template-columns: .25fr 1fr .25fr;
+  box-shadow: 0px 6px 23px -1px rgba(0,0,0,0.62);
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  z-index: 10;
+}
+
+.header .menu {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+
+.header .menu h3 {
+  display: inline-block;
+  color: white;
+  font-family: 'Sora', sans-serif;
+  margin-top: 5%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 15px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border-radius: 10px;
+  border-color: #342ed8;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+
+  width: 100px;
+
+}
+
+.header .icon-vertical {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: right;
+  width: 100%
+
+}
+
+.header .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0px;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.page {
+  margin-top: 123px;
+}
+.home {
+    background: linear-gradient(90deg, rgba(14,14,14,.7) 0%, rgba(14,14,14,.7) 64%, rgba(70,70,70,.7) 100%), url(intro.jpg) no-repeat;
+
+    background-position: center; /* Center the image */
+    background-size: 100%;
+    width: 100vw;
+    background-attachment: fixed;
+}
+
+.intro-container {
+  width: 100vw;
+  height: calc(100vh - 123px);
+
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+
+.home .text-container {
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 3px;
+}
+
+.home h1 {
+  font-size: 60px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  color: #bababa;
+
+}
+
+.home h2 {
+  font-size: 85px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(14,14,14,1) 5%, rgba(255,0,0,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home .row {
+  width: 100vw;
+  height: calc(100vh - 123px);
+}
+
+.home .img-container {
+  height: 70%;
+  width: 100%;
+  display: block;
+
+}
+
+.home .doc-sign-img {
+  margin-top: 25px;
+  height:100%;
+  border-radius: 5px;
+}
+
+
+.home .custom-button {
+  background: white;
+  font-size: 30px;
+  border-radius:30px 0 30px 0;
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -310px;
+  margin-right: 165px;
+  outline: none;
+
+}
+
+.home h3 {
+  font-size: 50px;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.home h4 {
+  font-size: 40px;
+  color: #bababa;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 250;
+}
+
+.home .img-gallery {
+
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 300px !important;
+  outline: none;
 }

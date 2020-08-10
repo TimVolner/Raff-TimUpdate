@@ -8,26 +8,30 @@ import { faCarSide } from '@fortawesome/free-solid-svg-icons'
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
-
-
-
-
-
+import Logo from './logo.png'
 
 function Header() {
   return (
     <div>
       <header className="header">
-        <div className="col1"><FontAwesomeIcon icon={faFacebook}/> <FontAwesomeIcon icon={faTwitter}/> <FontAwesomeIcon icon={faInstagram}/></div>
-        <div className="col2">
-          <div className="menu">
-      <Link to="/about"><FontAwesomeIcon icon={faCheck} color="red"/><h3>About</h3></Link>
-        <Link to="/car"><FontAwesomeIcon icon={faCarSide} color="red"/><h3>Car</h3></Link>
-          <Link to="/contact"><FontAwesomeIcon icon={faAddressCard} color="red"/><h3>Contact</h3></Link>
-            <Link to="/search"><FontAwesomeIcon icon={faArrowUp} color="red"/><h3>Search</h3></Link>
-    <nav/>
-          </div>
+        <div className="col1 logo-container">
+          <Link to="/"><img src={Logo} className="logo"/></Link>
         </div>
+
+        <div className="col2 menu">
+          <Link to="/about"><h3><FontAwesomeIcon icon={faCheck} color="red"/> About</h3></Link>
+          <Link to="/car"><h3><FontAwesomeIcon icon={faCarSide} color="red"/> Car</h3></Link>
+          <Link to="/contact"><h3><FontAwesomeIcon icon={faAddressCard} color="red"/> Contact</h3></Link>
+          <Link to="/search"><h3><FontAwesomeIcon icon={faArrowUp} color="red"/> Search</h3></Link>
+
+        </div>
+
+        <div className="col3 icon-vertical">
+          <FontAwesomeIcon className="icon" color="red" icon={faFacebook}/>
+          <FontAwesomeIcon className="icon" color="red" icon={faTwitter}/>
+          <FontAwesomeIcon className="icon" color="red" icon={faInstagram}/>
+        </div>
+
       </header>
     </div>
    );
